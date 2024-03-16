@@ -1,0 +1,28 @@
+using System.Diagnostics;
+
+namespace loginsecreen1
+{
+ //   [DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string admin;
+            admin = "MIZRAK ROKET";
+            int password = 1205;
+            if (admin == Convert.ToString(textBox1.Text) && password == Convert.ToInt16(textBox2.Text))
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("UNVALID INFORMATION");
+            }
+        }
+    }
+    }
